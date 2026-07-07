@@ -1,0 +1,63 @@
+============================================================
+STATISTICAL SUMMARY
+============================================================
+
+--- Numeric columns: describe() ---
+          Age    Fare   SibSp   Parch
+count  891.00  891.00  891.00  891.00
+mean    29.34   31.22    0.52    0.38
+std     12.96   42.52    1.10    0.81
+min      0.42    0.00    0.00    0.00
+25%     22.00    7.91    0.00    0.00
+50%     28.00   14.45    0.00    0.00
+75%     35.00   31.00    1.00    0.00
+max     70.27  249.01    8.00    6.00
+
+--- Skewness & Kurtosis (shape of distribution) ---
+Age: skew=0.47 (roughly symmetric), kurtosis=0.84
+Fare: skew=3.11 (right-skewed (long tail of high values)), kurtosis=10.97
+
+--- Categorical breakdowns ---
+
+Survived value counts:
+  0: 549 (61.6%)
+  1: 342 (38.4%)
+
+Pclass value counts:
+  3: 491 (55.1%)
+  1: 216 (24.2%)
+  2: 184 (20.7%)
+
+Sex value counts:
+  male: 577 (64.8%)
+  female: 314 (35.2%)
+
+Embarked value counts:
+  S: 646 (72.5%)
+  C: 168 (18.9%)
+  Q: 77 (8.6%)
+
+--- Overall survival rate ---
+38.4% of passengers survived (342 of 891)
+
+============================================================
+CORRELATION ANALYSIS
+============================================================
+
+--- Correlation with Survival (ranked by strength) ---
+  Sex_encoded: 0.543 (positively correlated)
+  Pclass: -0.338 (negatively correlated)
+  HasCabin: 0.317 (positively correlated)
+  Fare: 0.273 (positively correlated)
+  Embarked_encoded: 0.107 (positively correlated)
+  Parch: 0.082 (positively correlated)
+  Age: -0.066 (negatively correlated)
+  SibSp: -0.035 (negatively correlated)
+  FamilySize: 0.017 (positively correlated)
+
+============================================================
+TOP 3 KEY INFLUENCING FACTORS
+============================================================
+1. Sex_encoded (correlation: 0.543)
+2. Pclass (correlation: -0.338)
+3. HasCabin (correlation: 0.317)
